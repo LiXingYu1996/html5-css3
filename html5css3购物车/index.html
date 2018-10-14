@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5&css3购物车</title>
+    <link rel="stylesheet" href="css/jquery.fullpage.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--共同的元素-->
+<div class="go"><a href="javascript:;"><img src="images/00-go.png" alt="go"/></a></div>
+<div class="more"><a href="javascript:;"><img src="images/00-more.png" alt="more"/></a></div>
+<!--整体容器-->
+<!--指示器 点容器-->
+<div class="container">
+    <!--每一个切换的屏幕 背景-->
+    <div class="section screen01">
+        <!--商品列表 沙发 横幅-->
+        <!--如果是大屏幕 基于top定位 脱离显示区域 固定在一个区域内 用一个固定大小的容器来装内容-->
+        <div class="content">
+            <div class="goods"><img src="images/01-goods.png" alt="商品"/></div>
+            <div class="sofa"><img src="images/01-sofa.png" alt="沙发"/></div>
+            <div class="fly"><img src="images/01-fly.png" alt="横幅"/></div>
+        </div>
+    </div>
+    <!--第二屏的动画-->
+    <!--什么时候进入动画-->
+    <!--怎么做动画 给我们的大容器添加一个类 在这个类下面可以给需要做动画的元素添加动画属性-->
+    <div class="section screen02">
+        <div class="content">
+            <!--商品列表-->
+            <div class="goods"><img src="images/02-goods.png" alt="商品"/></div>
+            <!--沙发-->
+            <div class="sofa"><img src="images/02-sofa.png" alt="沙发"/></div>
+            <!--输入框 搜索框-->
+            <div class="input">
+                <img class="search" src="images/02-search.png" alt="搜索框"/>
+                <img class="key" src="images/02-key.png" alt="关键字"/>
+            </div>
+            <!--文字-->
+            <div class="text">
+                <img class="text01" src="images/02-text1.png" alt="文字"/>
+                <img class="text02" src="images/02-text2.png" alt="文字"/>
+            </div>
+        </div>
+    </div>
+    <!--第三屏的动画-->
+    <div class="section screen03">
+        <div class="content">
+            <!--沙发-->
+            <div class="sofa"><img src="images/02-sofa.png" alt="沙发"></div>
+            <!--尺码 颜色-->
+            <div class="change">
+                <img class="change01" src="images/03-change01.gif" alt="尺码颜色"/>
+                <img class="change02" src="images/03-change02.gif" alt="尺码颜色"/>
+            </div>
+            <!--购物车-->
+            <div class="cart">
+                <img class="cart01" src="images/03-cart01.gif" alt="购物车"/>
+                <img class="cart02" src="images/03-cart02.gif" alt="购物车"/>
+            </div>
+
+        </div>
+    </div>
+    <!--第四屏的动画-->
+    <div class="section screen04">
+        <div class="content">
+            <!--白云-->
+            <div class="cloud"><img src="images/04-cloud.png" alt="白云"/></div>
+            <!--文字-->
+            <div class="text">
+                <img src="images/04-text01.png" alt="文字"/>
+                <img src="images/04-text02.png" alt="文字"/>
+            </div>
+            <!--购物车-->
+            <div class="cart"><img src="images/04-cart.png" alt="购物车"/></div>
+            <!--沙发-->
+            <div class="sofa"><img src="images/02-sofa.png" alt="沙发"></div>
+            <!--收货地址-->
+            <div class="address">
+                <img src="images/04-address01.png" alt="收货地址"/>
+                <img src="images/04-address02.png" alt="收货地址"/>
+            </div>
+        </div>
+    </div>
+    <!--第五屏的动画-->
+    <div class="section screen05">
+        <div class="content">
+            <!--文字-->
+            <div class="text"><img src="images/05-text.png" alt="文字"/></div>
+            <!--沙发-->
+            <div class="sofa"><img src="images/02-sofa.png" alt="沙发"/></div>
+            <!--银行卡-->
+            <div class="card">
+                <img class="cardImg" src="images/05-card.png" alt="银行卡"/>
+                <img class="orderImg" src="images/05-order.png" alt="订单"/>
+            </div>
+            <!--点鼠标-->
+            <div class="mouse">
+                <img class="m1" src="images/05-mouse01.png" alt="鼠标"/>
+                <img class="m2" src="images/05-mouse02.png" alt="鼠标"/>
+                <img class="hand" src="images/05-hand.png" alt="手"/>
+            </div>
+        </div>
+    </div>
+    <!--第六屏的动画-->
+    <div class="section screen06">
+        <div class="content">
+            <!--白云-->
+            <div class="cloud">
+                <img src="images/06-cloud01.png" alt="白云"/>
+                <img src="images/06-cloud02.png" alt="白云"/>
+            </div>
+            <!--文字-->
+            <div class="text">
+                <img src="images/06-text01.png" alt="文字"/>
+                <img src="images/06-text02.png" alt="文字"/>
+            </div>
+            <!--盒子-->
+            <div class="box">
+                <img src="images/06-box.png" alt="盒子"/>
+            </div>
+            <!--汽车-->
+            <div class="car">
+                <img class="carImg" src="images/06-car.png" alt="汽车"/>
+                <img class="buyer" src="images/06-buyer.png" alt="卖家地址"/>
+                <img class="address" src="images/06-address.png" alt="收货地址"/>
+                <img class="worker" src="images/06-worker.png" alt="工作者"/>
+                <img class="say" src="images/06-say.png" alt="说的话"/>
+            </div>
+            <!--收货人-->
+            <div class="person">
+                <img class="door" src="images/06-door.png" alt="门"/>
+                <img class="personImg" src="images/06-person.png" alt="收货人"/>
+            </div>
+        </div>
+    </div>
+    <!--第七屏的动画-->
+    <div class="section screen07">
+        <div class="content">
+            <div class="star">
+                <img src="images/07-star.png" alt="星星"/>
+                <img src="images/07-star.png" alt="星星"/>
+                <img src="images/07-star.png" alt="星星"/>
+                <img src="images/07-star.png" alt="星星"/>
+                <img src="images/07-star.png" alt="星星"/>
+            </div>
+            <div class="text">
+                <img src="images/07-text.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!--第八屏的动画-->
+    <div class="section screen08">
+        <div class="content">
+            <div class="btn">
+                <img class="btnImg1" src="images/08-btn01.png" alt="按钮"/>
+                <img class="btnImg2" src="images/08-btn02.gif" alt="按钮"/>
+            </div>
+            <div class="">
+                <img class="again" src="images/08-again.png" alt="再来一次"/>
+                <img class="hand" src="images/08-hand.png" alt="手"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
